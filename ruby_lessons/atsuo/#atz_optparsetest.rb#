@@ -1,0 +1,14 @@
+require 'optparse'
+
+opt = OptionParser.new
+
+params = []        
+opt.on('-h VAL', '--hextoplaintext') { |v| params[0] = v; print params.pack('H*'); puts 
+opt.on('-p2h VAL') { |v| print v.unpack('H*')[0] }
+
+opt.parse(ARGV)
+# p ARGV
+# p params
+# print params.pack('H*')
+
+
