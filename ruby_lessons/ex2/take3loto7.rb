@@ -5,7 +5,8 @@ array_num.count.times do |num|
 
 #ランダムにとった要素を一つずつ削除してい
 
-puts array_num.delete_at(rand(array_num.count))  
+print array_num.delete_at(rand(array_num.count))  
+print " "
 break if num == 6
 end
 
